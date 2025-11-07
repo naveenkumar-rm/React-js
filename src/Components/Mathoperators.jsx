@@ -26,7 +26,7 @@ const Mathoperators = () => {
         c = 'Invalid operation';
         break;
     }
-    sete(c);
+    sete(c);  
   };
 
   return (

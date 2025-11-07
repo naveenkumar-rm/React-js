@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import A from './Components/Mathoperators';
+import B from './Components/Profitorloss';
+import C from './Components/Electricitybillcalculator';
+import D from './Components/Salarytaxcalculator';
+import E from './Components/Arrayandmap';
 function App() {
   return (
     <div>
-      <A/>
+      {/* <A/>
+      <B/>
+      <C/>
+      <D/> */}
+      <E/>
     </div>
   );
 }
