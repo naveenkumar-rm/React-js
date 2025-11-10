@@ -5,14 +5,16 @@ import B from './Components/Profitorloss';
 import C from './Components/Electricitybillcalculator';
 import D from './Components/Salarytaxcalculator';
 import E from './Components/Arrayandmap';
+import F from './Components/String';
 function App() {
   return (
     <div>
       {/* <A/>
       <B/>
       <C/>
-      <D/> */}
-      <E/>
+      <D/>
+      <E/> */}
+      <F/>
     </div>
   );
 }
