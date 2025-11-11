@@ -33,9 +33,16 @@ function Output() {
 
 }
 function largestword() {
-    let longword=Largeword.split(" ");
+    let longword=Largeword.split(' ');
+    let largest='';
 
-    setLargeword1(longword)
+    for(let w of longword){
+      if (w.length>largest.length){
+        largest=w;
+      }
+    }
+
+    setLargeword1(largest)
   }
 
 
@@ -58,7 +65,7 @@ function largestword() {
 
     <input placeholder='Enter your Sentance' onChange={(e)=>setLargeword(e.target.value)}/>
      <button onClick={largestword}>largestword</button>
-     <h3>{Largeword}</h3>
+     <h3>{Largeword1}</h3>
 
     </div>
   )
