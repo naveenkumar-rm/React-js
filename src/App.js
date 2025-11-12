@@ -10,19 +10,25 @@ import G from './Components/Task';
 import H from './Components/Propss/Parent';
 import I from './Components/Propss/Students';
 import J from './Components/Propss/Departsment';
+import K from './Components/Anagram';
+import L from './Components/Usestatecomp/Parent';
+import M from './Components/Usestatecomp/Child1';
 function App() {
   return (
     <div>
-      {/* <A/>
+      {/* <A/>  
       <B/>
       <C/>
       <D/>
       <E/>
       <F/>
-      <G/> */}
+      <G/>
       <H/>
       <I/>
-      <J/>
+      <J/> 
+      <K/>
+      <M/>*/}
+      <L/>
     </div>
   );
 }
