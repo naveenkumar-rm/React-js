@@ -14,6 +14,9 @@ import K from './Components/Anagram';
 import L from './Components/Usestatecomp/Parent';
 import M from './Components/Usestatecomp/Child1';
 import System from './Components/Librarymanagement/System';
+import Stonepaper from './Components/Stonepaper';
+import Navbar from './Components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div>
@@ -29,8 +32,23 @@ function App() {
       <J/> 
       <K/>
       <M/>
-      <L/>*/}
-      <System/>
+      <L/>
+      <System/>*/}
+     
+     
+       <BrowserRouter>
+             <Navbar />
+
+      <Routes>
+        <Route path='' element={<B />} />
+        <Route path='/game' element={ <Stonepaper />} />
+        <Route path='/Electricitybillcalculator' element={<C />} />
+        <Route path='/Salarytaxcalculator' element={<D />} />
+        <Route path='/Librarymanagement' element={<System />} />
+      </Routes>
+      
+      </BrowserRouter>
+
     </div>
   );
 }
