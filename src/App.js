@@ -17,6 +17,8 @@ import System from './Components/Librarymanagement/System';
 import Stonepaper from './Components/Stonepaper';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Moviemain from './Components/Usestatecomp/Movie/Moviemain';
+import FormValidation from './Components/FormValidation';
 function App() {
   return (
     <div>
@@ -45,6 +47,8 @@ function App() {
         <Route path='/Electricitybillcalculator' element={<C />} />
         <Route path='/Salarytaxcalculator' element={<D />} />
         <Route path='/Librarymanagement' element={<System />} />
+        <Route path='/Moviemanagement' element={<Moviemain/>} />
+        <Route path='/FormValidation' element={<FormValidation/>} />
       </Routes>
       
       </BrowserRouter>

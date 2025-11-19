@@ -38,6 +38,14 @@ const Navbar = () => {
       >
         Librarymanagement
       </NavLink>
+         <NavLink
+        to="/Moviemanagement"
+        style={({ isActive }) => ({
+          color: isActive ? 'blue' : 'red'
+        })}
+      >
+        Moviemanagement
+      </NavLink>
     </div>
   )
 }
