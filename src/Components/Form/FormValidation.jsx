@@ -1,10 +1,11 @@
 import { useFormik } from 'formik'
 import React from 'react'
+import { useState } from 'react';
 import { Button } from 'react-bootstrap'
 import * as Yup from "yup";
-
+import Userprint from './Userprint';
 const FormValidation = () => {
-
+const[user,setuser]=useState({})
     const initialValues= {
         'name': '',
         'email': '',
@@ -12,7 +13,7 @@ const FormValidation = () => {
         'password': ''  
     }
 
-   
+
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -35,11 +36,13 @@ const validationSchema = Yup.object({
     const formik = useFormik({
         initialValues,
         validationSchema,
-        onSubmit: values => console.log(values)
+        onSubmit: values => setuser([values]),
+        
 
     })
     return (
         <div style={{textAlign:'center'}}>
+          <Userprint usr={user}></Userprint>
             <h1>Form Validation</h1>
             <form onSubmit={formik.handleSubmit}>
                 <input placeholder='Name' name='name' value={formik.values.name } onChange={formik.handleChange} /><br/><br/>
